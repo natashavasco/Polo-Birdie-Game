@@ -855,10 +855,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 59898686}
     m_Modifications:
     - target: {fileID: 397272259889629485, guid: 0bf7f49a1aefc2a4d820e069c62cb46f, type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 397272259889629485, guid: 0bf7f49a1aefc2a4d820e069c62cb46f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
@@ -874,12 +870,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: CreateRoomScreen
       objectReference: {fileID: 0}
-    - target: {fileID: 6234099598569048794, guid: 0bf7f49a1aefc2a4d820e069c62cb46f, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8055371157779563923, guid: 0bf7f49a1aefc2a4d820e069c62cb46f, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -911,10 +902,6 @@ PrefabInstance:
     - target: {fileID: 3065040319698722103, guid: 7473ca99a2dadb74c8ba860f9a0c41d4, type: 3}
       propertyPath: m_Name
       value: MultiplayerScreen
-      objectReference: {fileID: 0}
-    - target: {fileID: 3065040319698722103, guid: 7473ca99a2dadb74c8ba860f9a0c41d4, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8407920766895588493, guid: 7473ca99a2dadb74c8ba860f9a0c41d4, type: 3}
       propertyPath: m_Pivot.x
@@ -976,10 +963,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1275778083226293132, guid: 7473ca99a2dadb74c8ba860f9a0c41d4, type: 3}
-    m_RemovedGameObjects:
-    - {fileID: 5404842095913374487, guid: 7473ca99a2dadb74c8ba860f9a0c41d4, type: 3}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7473ca99a2dadb74c8ba860f9a0c41d4, type: 3}
@@ -1005,10 +990,6 @@ PrefabInstance:
     - target: {fileID: 7369885389104811942, guid: 53aa03c2ed71b8640b0e8dc0e91e83a3, type: 3}
       propertyPath: m_Name
       value: FreeplayScreen
-      objectReference: {fileID: 0}
-    - target: {fileID: 7369885389104811942, guid: 53aa03c2ed71b8640b0e8dc0e91e83a3, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8464498203003222903, guid: 53aa03c2ed71b8640b0e8dc0e91e83a3, type: 3}
       propertyPath: m_Pivot.x
@@ -1118,10 +1099,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: MainScreen
       objectReference: {fileID: 0}
-    - target: {fileID: 146741185163956324, guid: 55307469da62a4e41a5697fe706d551f, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 9041308518260186086, guid: 55307469da62a4e41a5697fe706d551f, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1129,10 +1106,6 @@ PrefabInstance:
     - target: {fileID: 9041308518260186086, guid: 55307469da62a4e41a5697fe706d551f, type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 9041308518260186086, guid: 55307469da62a4e41a5697fe706d551f, type: 3}
-      propertyPath: m_RootOrder
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 9041308518260186086, guid: 55307469da62a4e41a5697fe706d551f, type: 3}
       propertyPath: m_AnchorMax.x
@@ -1220,8 +1193,12 @@ PrefabInstance:
     m_TransformParent: {fileID: 59898686}
     m_Modifications:
     - target: {fileID: 894042936919327154, guid: bc54cbb6425beba4a91faaaf482f92ca, type: 3}
-      propertyPath: m_RootOrder
-      value: 4
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 894042936919327154, guid: bc54cbb6425beba4a91faaaf482f92ca, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 894042936919327154, guid: bc54cbb6425beba4a91faaaf482f92ca, type: 3}
       propertyPath: m_AnchorMax.x
@@ -1248,6 +1225,22 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 894042936919327154, guid: bc54cbb6425beba4a91faaaf482f92ca, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 894042936919327154, guid: bc54cbb6425beba4a91faaaf482f92ca, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 894042936919327154, guid: bc54cbb6425beba4a91faaaf482f92ca, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 894042936919327154, guid: bc54cbb6425beba4a91faaaf482f92ca, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 894042936919327154, guid: bc54cbb6425beba4a91faaaf482f92ca, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
@@ -1263,14 +1256,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: JoinRoomScreen
       objectReference: {fileID: 0}
-    - target: {fileID: 8223512197623653436, guid: bc54cbb6425beba4a91faaaf482f92ca, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: 6996125462383758273, guid: bc54cbb6425beba4a91faaaf482f92ca, type: 3}
-    - {fileID: 3495480837111464533, guid: bc54cbb6425beba4a91faaaf482f92ca, type: 3}
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bc54cbb6425beba4a91faaaf482f92ca, type: 3}
