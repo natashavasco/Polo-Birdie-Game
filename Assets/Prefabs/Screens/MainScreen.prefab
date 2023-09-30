@@ -31,7 +31,6 @@ RectTransform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 7732872124803739599}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -66,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 17951b70f55fe7a429cb027473eeb62f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 66971d78afaa9084fadc524908dfbd9d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -85,8 +84,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9041308518260186086}
+  - component: {fileID: 2671470433696480994}
   m_Layer: 0
-  m_Name: StartScreen
+  m_Name: MainScreen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -108,13 +108,24 @@ RectTransform:
   - {fileID: 1059139181247255985}
   - {fileID: 7732872124803739599}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2671470433696480994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 146741185163956324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3036299cc91cb24ea5406de5a9612c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1543484940747372414
 GameObject:
   m_ObjectHideFlags: 0
@@ -146,7 +157,6 @@ RectTransform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 7732872124803739599}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -181,7 +191,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 17951b70f55fe7a429cb027473eeb62f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 66971d78afaa9084fadc524908dfbd9d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -219,11 +229,10 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 6045151561357359734}
-  - {fileID: 4429396630648263145}
   - {fileID: 4559576508906244736}
+  - {fileID: 4429396630648263145}
+  - {fileID: 6045151561357359734}
   m_Father: {fileID: 9041308518260186086}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
@@ -261,7 +270,6 @@ RectTransform:
   - {fileID: 6279758509880196651}
   - {fileID: 2353146880764240253}
   m_Father: {fileID: 9041308518260186086}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -273,6 +281,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 9041308518260186086}
     m_Modifications:
     - target: {fileID: 799664942949902163, guid: d57d136fa65fd4b4aa34e5ebaff02ea6, type: 3}
@@ -372,6 +381,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d57d136fa65fd4b4aa34e5ebaff02ea6, type: 3}
 --- !u!224 &1059139181247255985 stripped
 RectTransform:
@@ -383,6 +395,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 7274429947537039003}
     m_Modifications:
     - target: {fileID: 4421478085000147706, guid: bc355548ceb69ae419002ed8c5f4e383, type: 3}
@@ -396,6 +409,10 @@ PrefabInstance:
     - target: {fileID: 4749400462163913369, guid: bc355548ceb69ae419002ed8c5f4e383, type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4749400462163913369, guid: bc355548ceb69ae419002ed8c5f4e383, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4749400462163913369, guid: bc355548ceb69ae419002ed8c5f4e383, type: 3}
       propertyPath: m_AnchorMax.x
@@ -469,11 +486,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7582204388733492528, guid: bc355548ceb69ae419002ed8c5f4e383, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7582204388733492528, guid: bc355548ceb69ae419002ed8c5f4e383, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7582204388733492528, guid: bc355548ceb69ae419002ed8c5f4e383, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2671470433696480994}
+    - target: {fileID: 7582204388733492528, guid: bc355548ceb69ae419002ed8c5f4e383, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7582204388733492528, guid: bc355548ceb69ae419002ed8c5f4e383, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnReturnPress
+      objectReference: {fileID: 0}
+    - target: {fileID: 7582204388733492528, guid: bc355548ceb69ae419002ed8c5f4e383, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UIScreen, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7582204388733492528, guid: bc355548ceb69ae419002ed8c5f4e383, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8234535699797528980, guid: bc355548ceb69ae419002ed8c5f4e383, type: 3}
       propertyPath: m_Name
       value: 'Button: ExitGame'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bc355548ceb69ae419002ed8c5f4e383, type: 3}
 --- !u!224 &6045151561357359734 stripped
 RectTransform:
@@ -485,6 +533,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 7274429947537039003}
     m_Modifications:
     - target: {fileID: 4421478085000147706, guid: bc355548ceb69ae419002ed8c5f4e383, type: 3}
@@ -575,11 +624,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7582204388733492528, guid: bc355548ceb69ae419002ed8c5f4e383, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7582204388733492528, guid: bc355548ceb69ae419002ed8c5f4e383, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7582204388733492528, guid: bc355548ceb69ae419002ed8c5f4e383, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2671470433696480994}
+    - target: {fileID: 7582204388733492528, guid: bc355548ceb69ae419002ed8c5f4e383, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7582204388733492528, guid: bc355548ceb69ae419002ed8c5f4e383, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnFreeplayPress
+      objectReference: {fileID: 0}
+    - target: {fileID: 7582204388733492528, guid: bc355548ceb69ae419002ed8c5f4e383, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MainScreen, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7582204388733492528, guid: bc355548ceb69ae419002ed8c5f4e383, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8234535699797528980, guid: bc355548ceb69ae419002ed8c5f4e383, type: 3}
       propertyPath: m_Name
       value: 'Button: Freeplay'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bc355548ceb69ae419002ed8c5f4e383, type: 3}
 --- !u!224 &4429396630648263145 stripped
 RectTransform:
@@ -591,6 +671,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 7274429947537039003}
     m_Modifications:
     - target: {fileID: 4421478085000147706, guid: bc355548ceb69ae419002ed8c5f4e383, type: 3}
@@ -607,7 +688,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4749400462163913369, guid: bc355548ceb69ae419002ed8c5f4e383, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4749400462163913369, guid: bc355548ceb69ae419002ed8c5f4e383, type: 3}
       propertyPath: m_AnchorMax.x
@@ -685,11 +766,42 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7582204388733492528, guid: bc355548ceb69ae419002ed8c5f4e383, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7582204388733492528, guid: bc355548ceb69ae419002ed8c5f4e383, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7582204388733492528, guid: bc355548ceb69ae419002ed8c5f4e383, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2671470433696480994}
+    - target: {fileID: 7582204388733492528, guid: bc355548ceb69ae419002ed8c5f4e383, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7582204388733492528, guid: bc355548ceb69ae419002ed8c5f4e383, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnMultiplayerPress
+      objectReference: {fileID: 0}
+    - target: {fileID: 7582204388733492528, guid: bc355548ceb69ae419002ed8c5f4e383, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MainScreen, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7582204388733492528, guid: bc355548ceb69ae419002ed8c5f4e383, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8234535699797528980, guid: bc355548ceb69ae419002ed8c5f4e383, type: 3}
       propertyPath: m_Name
       value: 'Button: Multiplayer'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bc355548ceb69ae419002ed8c5f4e383, type: 3}
 --- !u!224 &4559576508906244736 stripped
 RectTransform:
