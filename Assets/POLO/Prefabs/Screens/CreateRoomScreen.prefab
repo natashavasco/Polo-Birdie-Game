@@ -195,9 +195,13 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 397272259889629485}
     m_Modifications:
+    - target: {fileID: 636814280977555627, guid: 7eeab4ebacb5ab74ca43f48a506cc039, type: 3}
+      propertyPath: m_text
+      value: Player Name
+      objectReference: {fileID: 0}
     - target: {fileID: 3431159563434555346, guid: 7eeab4ebacb5ab74ca43f48a506cc039, type: 3}
       propertyPath: m_Name
-      value: 'InputField: RoomCode'
+      value: 'InputField: PlayerName'
       objectReference: {fileID: 0}
     - target: {fileID: 5471969609609776764, guid: 7eeab4ebacb5ab74ca43f48a506cc039, type: 3}
       propertyPath: m_Pivot.x
@@ -278,6 +282,10 @@ PrefabInstance:
     - target: {fileID: 5471969609609776764, guid: 7eeab4ebacb5ab74ca43f48a506cc039, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8232547228567001321, guid: 7eeab4ebacb5ab74ca43f48a506cc039, type: 3}
+      propertyPath: m_Name
+      value: InputField
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
