@@ -1,11 +1,12 @@
-using ExitGames.Client.Photon.StructWrapping;
-using Unity.VisualScripting;
+using System;
 using UnityEngine;
 
 public class LoginManager : MonoBehaviour
 {
     [SerializeField] private UIManager m_UIManager;
-    
+
+    public event Action OnCreateRequested;
+    public event Action OnJoinRequested;
     private void Start()
     {
         SubscribeToButtons();
@@ -36,23 +37,11 @@ public class LoginManager : MonoBehaviour
 
     private void HandleOnReturnPressed(UIScreen screen)
     {
-        UIScreen nextScreen = null;
+        UIScreen previousScreen = screen.GetPreviousScreen();
         
-        switch (screen)
+        if (previousScreen != null)
         {
-            case MultiplayerScreen:
-            case FreeplayScreen:
-                nextScreen = m_UIManager.Get<MainScreen>();
-                break;
-            case CreateRoomScreen:
-            case JoinRoomScreen:
-                nextScreen = m_UIManager.Get<MultiplayerScreen>();
-                break;
-        }
-
-        if (nextScreen != null)
-        {
-            m_UIManager.Show(nextScreen);
+            m_UIManager.Show(previousScreen);
         }
     }
 
@@ -99,11 +88,13 @@ public class LoginManager : MonoBehaviour
 
     private void HandleOnCreatePressed()
     {
+        OnCreateRequested?.Invoke();
         m_UIManager.HideAll();
     }
 
     private void HandleOnJoinPressed()
     {
+        OnJoinRequested?.Invoke();
         m_UIManager.HideAll();
     }
     #endregion

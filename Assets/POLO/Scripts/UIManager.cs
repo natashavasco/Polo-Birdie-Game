@@ -2,6 +2,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
 
+/// <summary>
+/// Handles the showing and hiding of UI screens.
+/// TODO: Make this a singleton [NV 02-Oct-23]
+/// </summary>
 public class UIManager : MonoBehaviour
 {
     [SerializeField] private List<UIScreen> m_Screens = new List<UIScreen>();
