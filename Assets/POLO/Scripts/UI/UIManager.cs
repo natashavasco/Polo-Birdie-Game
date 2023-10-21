@@ -6,7 +6,7 @@ using UnityEngine.Serialization;
 /// Handles the showing and hiding of UI screens.
 /// TODO: Make this a singleton [NV 02-Oct-23]
 /// </summary>
-public class UIManager : MonoBehaviour
+public class UIManager : Singleton<UIManager>
 {
     [SerializeField] private List<UIScreen> m_Screens = new List<UIScreen>();
     [SerializeField] private GameObject m_UICanvas;

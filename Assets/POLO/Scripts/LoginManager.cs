@@ -1,4 +1,5 @@
 using System;
+using POLO.Scripts.UI;
 using UnityEngine;
 
 public class LoginManager : MonoBehaviour
@@ -9,9 +10,14 @@ public class LoginManager : MonoBehaviour
     public event Action OnJoinRequested;
     private void Start()
     {
+        m_UIManager = UIManager.Instance;
+        if (m_UIManager == null)
+        {
+            Debug.Log("UI Manager not found");
+        }
         SubscribeToButtons();
         m_UIManager.HideAllScreens();
-        UIScreen startScreen = m_UIManager.Get<MainScreen>();
+        UIScreen startScreen = m_UIManager.Get<MainMenuScreen>();
         m_UIManager.Show(startScreen);
     }
 
@@ -22,8 +28,8 @@ public class LoginManager : MonoBehaviour
     
     private void SubscribeToButtons()
     {
-        m_UIManager.Get<MainScreen>().OnMultiplayerButtonPressed += HandleOnMultiplayerPressed;
-        m_UIManager.Get<MainScreen>().OnFreeplayButtonPressed += HandleOnFreeplayPressed;
+        UIManager.Instance.Get<MainMenuScreen>().OnMultiplayerButtonPressed += HandleOnMultiplayerPressed;
+        m_UIManager.Get<MainMenuScreen>().OnFreeplayButtonPressed += HandleOnFreeplayPressed;
         m_UIManager.Get<FreeplayScreen>().OnStartButtonPressed += HandleOnStartFreeplayPressed;
         m_UIManager.Get<MultiplayerScreen>().OnCreateRoomButtonPressed += HandleOnCreateRoomPressed;
         m_UIManager.Get<MultiplayerScreen>().OnJoinRoomButtonPressed += HandleOnJoinRoomPressed;
@@ -47,8 +53,8 @@ public class LoginManager : MonoBehaviour
 
     private void UnsubscribeToButtons()
     {
-        m_UIManager.Get<MainScreen>().OnMultiplayerButtonPressed -= HandleOnMultiplayerPressed;
-        m_UIManager.Get<MainScreen>().OnFreeplayButtonPressed -= HandleOnFreeplayPressed;
+        m_UIManager.Get<MainMenuScreen>().OnMultiplayerButtonPressed -= HandleOnMultiplayerPressed;
+        m_UIManager.Get<MainMenuScreen>().OnFreeplayButtonPressed -= HandleOnFreeplayPressed;
         m_UIManager.Get<FreeplayScreen>().OnStartButtonPressed -= HandleOnStartFreeplayPressed;
         m_UIManager.Get<MultiplayerScreen>().OnCreateRoomButtonPressed -= HandleOnCreateRoomPressed;
         m_UIManager.Get<MultiplayerScreen>().OnJoinRoomButtonPressed -= HandleOnJoinRoomPressed;

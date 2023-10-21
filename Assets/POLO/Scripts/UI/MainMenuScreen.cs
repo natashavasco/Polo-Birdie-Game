@@ -1,6 +1,7 @@
 using System;
+using UnityEngine;
 
-public class MainScreen : UIScreen
+public class MainMenuScreen : UIScreen
 {
     public event Action OnMultiplayerButtonPressed;
     public event Action OnFreeplayButtonPressed;
