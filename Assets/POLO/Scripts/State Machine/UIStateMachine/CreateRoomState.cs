@@ -33,14 +33,21 @@ namespace POLO.Scripts.State_Machine.UIStateMachine
             screen.OnReturnButtonPressed -= HandleOnReturnButtonPressed;
         }
 
-        private void HandleOnCreateButtonPressed()
+        private void HandleOnCreateButtonPressed(string roomName, string playerName)
         {
-            Debug.Log("Creating Room...");
+            GameLauncher.Instance.SetCreateLobby();
+            GameLauncher.Instance.CreateSession(roomName);
+            //StateMachine.ChangeState(((GameStateMachine)StateMachine).InitState);
         }
 
         private void HandleOnReturnButtonPressed(UIScreen obj)
         {
             StateMachine.ChangeState(((MainUIStateMachine)StateMachine).MultiplayerState);
+        }
+
+        public void RequestChangeStateToGame()
+        {
+            
         }
     }
 }

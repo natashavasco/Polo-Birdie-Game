@@ -33,9 +33,10 @@ namespace POLO.Scripts.State_Machine.UIStateMachine
             screen.OnReturnButtonPressed -= HandleOnReturnButtonPressed;
         }
 
-        private void HandleOnJoinRoomButtonPressed()
+        private void HandleOnJoinRoomButtonPressed(string roomName, string playerName)
         {
-            Debug.Log("Joining Room...");
+            GameLauncher.Instance.SetJoinLobby();
+            GameLauncher.Instance.CreateSession(roomName);
         }
 
         private void HandleOnReturnButtonPressed(UIScreen obj)

@@ -33,8 +33,8 @@ public class LoginManager : MonoBehaviour
         m_UIManager.Get<FreeplayScreen>().OnStartButtonPressed += HandleOnStartFreeplayPressed;
         m_UIManager.Get<MultiplayerScreen>().OnCreateRoomButtonPressed += HandleOnCreateRoomPressed;
         m_UIManager.Get<MultiplayerScreen>().OnJoinRoomButtonPressed += HandleOnJoinRoomPressed;
-        m_UIManager.Get<CreateRoomScreen>().OnCreateButtonPressed += HandleOnCreatePressed;
-        m_UIManager.Get<JoinRoomScreen>().OnJoinRoomButtonPressed += HandleOnJoinPressed;
+        //m_UIManager.Get<CreateRoomScreen>().OnCreateButtonPressed += HandleOnCreatePressed;
+        //m_UIManager.Get<JoinRoomScreen>().OnJoinRoomButtonPressed += HandleOnJoinPressed;
         foreach (UIScreen screen in m_UIManager.Screens)
         {
             screen.OnReturnButtonPressed += HandleOnReturnPressed;
@@ -58,8 +58,8 @@ public class LoginManager : MonoBehaviour
         m_UIManager.Get<FreeplayScreen>().OnStartButtonPressed -= HandleOnStartFreeplayPressed;
         m_UIManager.Get<MultiplayerScreen>().OnCreateRoomButtonPressed -= HandleOnCreateRoomPressed;
         m_UIManager.Get<MultiplayerScreen>().OnJoinRoomButtonPressed -= HandleOnJoinRoomPressed;
-        m_UIManager.Get<CreateRoomScreen>().OnCreateButtonPressed -= HandleOnCreatePressed;
-        m_UIManager.Get<JoinRoomScreen>().OnJoinRoomButtonPressed -= HandleOnJoinPressed;
+        //m_UIManager.Get<CreateRoomScreen>().OnCreateButtonPressed -= HandleOnCreatePressed;
+        //m_UIManager.Get<JoinRoomScreen>().OnJoinRoomButtonPressed -= HandleOnJoinPressed;
     }
 
     #region button handlers

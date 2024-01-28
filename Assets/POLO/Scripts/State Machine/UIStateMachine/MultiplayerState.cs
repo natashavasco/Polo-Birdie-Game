@@ -37,6 +37,7 @@ namespace POLO.Scripts.State_Machine.UIStateMachine
 
         private void HandleOnCreateRoomButtonPressed()
         {
+            //GameLauncher.Instance.CreateSession();
             StateMachine.ChangeState(((MainUIStateMachine)StateMachine).CreateRoomState);
         }
 
