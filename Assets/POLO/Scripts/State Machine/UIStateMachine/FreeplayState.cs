@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using POLO.Scripts.State_Machine.UIStateMachine;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class FreeplayState : BaseState
 {
@@ -45,7 +46,8 @@ public class FreeplayState : BaseState
         }
         else
         {
-            Debug.Log($"Welcome {playerName}");
+            PlayerPrefs.SetString("PlayerName", playerName);
+            SceneManager.LoadScene("Assets/POLO/Scenes/FreeplayScene.unity");
         }
     }
 
