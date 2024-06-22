@@ -1,0 +1,11 @@
+Model Information:
+* title:	Lowpoly Platformer Kit (Free Asset Pack)
+* source:	https://sketchfab.com/3d-models/lowpoly-platformer-kit-free-asset-pack-d4c2f6c5a44748ee8d32040fdd4617b0
+* author:	joaobaltieri (https://sketchfab.com/joaobaltieri)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Lowpoly Platformer Kit (Free Asset Pack)" (https://sketchfab.com/3d-models/lowpoly-platformer-kit-free-asset-pack-d4c2f6c5a44748ee8d32040fdd4617b0) by joaobaltieri (https://sketchfab.com/joaobaltieri) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
